@@ -7,32 +7,46 @@ public class Car {
 	String color;
 	
 	
+	
+	  Car(){
+	  
+	  System.out.println("Inside constructor"); }
+	 
+	
+	Car(String str){
+		System.out.println("Argument constructor ---"+str);
+	}
+	
 	public static void main(String[] args) {
+		
 		// TODO Auto-generated method stub
-			stop();
+			//stop();
+		Car c = new Car();
+		Car car = new Car("Haebllc");
+		
 		
 	}
 
 	void start() {
 		int a = 5;
-		stop();
+		//stop();
 		System.out.println("Start");
 		System.out.println(wheels);
 	}
 	
-	static void stop() {
-		Car c = new Car();
-		Car c1 = new Car();
-		c1.price = 10;
-		//c.start();
-		System.out.println(c1.price);
-		System.out.println(c.price);
-		
-		c1.wheels= 6;
-		
-		System.out.println("Stop");
-		System.out.println(c.wheels);
-		System.out.println(c1.wheels);
-	}
-	
+//	static void stop() {
+//		Car c = new Car();
+//		Car c1 = new Car();
+//		c1.price = 10;
+//		//c.start();
+//		System.out.println(c1.price);
+//		System.out.println(c.price);
+//		
+//		c1.wheels= 6;
+//		
+//		System.out.println("Stop");
+//		System.out.println(c.wheels);
+//		System.out.println(c1.wheels);
+//	}
+//	
 }
